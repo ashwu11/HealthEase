@@ -5,6 +5,7 @@ import MicIcon from '../components/mic-icon';
 import ClipboardIcon from '../components/clipboard-icon';
 import PersonIcon from '../components/person-icon';
 import { useNavigate } from 'react-router-dom';
+import logoImage from '../components/Logo.jpg'
 
 function HomePage() {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ function HomePage() {
     <div className='Page'>
 
       <div>
+        <img className='logo' src={logoImage} alt="Logo Image" />
         <h1 className='Title'>Health Mate</h1>
         <h3 className='Description'>Health made easy for everyone</h3>
       </div>

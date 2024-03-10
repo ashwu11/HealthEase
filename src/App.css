@@ -1,3 +1,9 @@
+.logo {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 5vw;
+}
+
 .home-footer {
   display: flex;
   flex-direction: row;
