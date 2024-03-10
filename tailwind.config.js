@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'headerSize': '20px', // custom font size
+      }
+    }
   },
   plugins: [],
   purge: {

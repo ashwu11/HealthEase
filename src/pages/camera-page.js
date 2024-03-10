@@ -8,7 +8,12 @@ import ClipboardIcon from '../components/clipboard-icon';
 function CameraPage() {
     return (
         <div>
-            <h1>My App</h1>
+            <h1
+                className="headerSize">
+                Camera
+            </h1>
+
+            {/* <h1>My App</h1>
             <ImageGrid />
 
             <h2>trial icon</h2>
@@ -21,7 +26,7 @@ function CameraPage() {
             <CameraIcon />
 
             <h2>clipboard icon</h2>
-            <ClipboardIcon />
+            <ClipboardIcon /> */}
         </div>
     );
 };
