@@ -107,6 +107,23 @@ header {
   color: #61dafb;
 }
 
+.icon-qualities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  /* /* Corresponds to rounded-2xl / */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* / Corresponds to shadow-sm / */
+  background-color: #0f2444;
+  /* / Corresponds to bg-blue-950 / */
+  height: 20vw;
+  width: 20vw;
+  margin: 1.5rem;
+  /* / Corresponds to m-6 */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
