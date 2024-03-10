@@ -29,8 +29,8 @@ const ImageGrid = () => {
     ];
 
     return (
-        <div className="flex flex-col justify-center max-w-[150px]">
-            <div className="flex flex-col w-full rounded-2xl bg-zinc-100 h-[150px]">
+        <div className="flex flex-col justify-center w-[10w]">
+            <div className="flex flex-col w-full rounded-2xl bg-zinc-100 h-[10w]">
                 <div className="flex gap-3 pr-2.5">
                     <Image {...images[0]} />
                     <Image {...images[1]} />

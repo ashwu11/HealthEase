@@ -16,8 +16,11 @@ function CameraPage() {
                 <h1 className='h1'>
                     Camera
                 </h1>
-                <CameraIcon style={{ size: '30%' }} />
 
+                <div className='icon-qualities' style={{ w: '5vw', h: '5vh' }}>
+                    <CameraIcon />
+
+                </div>
             </div>
 
         </header>

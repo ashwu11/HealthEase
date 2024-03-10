@@ -2,7 +2,7 @@ import * as React from "react";
 
 function MicIcon() {
     return (
-        <div className="flex justify-center items-center px-5 rounded-2xl shadow-sm bg-blue-950 h-[20vw] w-[20vw] m-6">
+        <div className='icon-qualities'>
             <img
                 loading="lazy"
                 alt="mic icon"
