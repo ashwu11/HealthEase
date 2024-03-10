@@ -24,11 +24,13 @@ app.use(express.json());
 // get user input for a question
 const readline = require('readline');
 
+// creates an interface 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
+// asks for user input
 rl.question('Please ask your question: ', (question) => {
     
     // Store the user input in a variable
@@ -61,11 +63,3 @@ rl.question('Please ask your question: ', (question) => {
 
     rl.close(); // Close the interface after reading input
 });
-
-// app.get("/message", (req, res) => {
-//   res.json({ message: "Hello man!?" });
-// });
-
-// app.listen(8000, () => {
-//   console.log(`Server is running on port 8000.`);
-// });
