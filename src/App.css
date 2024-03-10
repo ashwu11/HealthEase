@@ -1,3 +1,22 @@
+.Button {
+  border-radius: 25px;
+  background: #0A194D;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+  margin: 20px;
+}
+
+.Button-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Button-grid {
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
   display: flex;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Home from "./pages/home"
+import Home from "./pages/home-page"
 import CameraPage from "./pages/camera-page"
 
 function App() {
