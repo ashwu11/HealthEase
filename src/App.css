@@ -18,7 +18,7 @@
 
 h1 {
   font-size: 45px;
-  color: black;
+  color: #0A194D;
   font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 .Title {
-  font-size: 5vw;
+  font-size: 6vw;
   color: #0A194D;
   font-weight: bold;
   padding: 2vw;
@@ -42,7 +42,7 @@ header {
 }
 
 .Description {
-  font-size: 3vw;
+  font-size: 4vw;
   color: #0A194D;
   font-weight: bold;
   padding: 2vw;
@@ -187,6 +187,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20vw;
 }
 
 .search-response {
@@ -204,6 +205,8 @@ header {
   padding: 2vw;
   border-radius: 2vw;
   font-size: 4vw;
+  color: #E0EBEF;
+  background-color: #0A194D;
 }
 
 .search-bar {
@@ -212,6 +215,11 @@ header {
   width: 60vw;
   margin: 2vw;
   font-size: 4vw;
+  color: #0A194D;
+}
+
+.search-person {
+  size: 2vw;
 }
 
 .circular-button {

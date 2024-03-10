@@ -13,7 +13,7 @@ function HomePage() {
     <div className='Page'>
 
       <div>
-        <h1 className='Title'>Health Ease</h1>
+        <h1 className='Title'>Health Mate</h1>
         <h3 className='Description'>Health made easy for everyone</h3>
       </div>
 

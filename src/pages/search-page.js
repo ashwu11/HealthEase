@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import XIcon from '../components/x-icon';
-import PersonIcon from '../components/person-icon';
 import { useNavigate } from 'react-router-dom';
 
 function SearchPage() {
   const navigate = useNavigate();
-  const [inputValue, setInputValue] = useState("How can we help?");
+  const [inputValue, setInputValue] = useState("Enter a question...");
   var [serverResponse, setServerResponse] = useState(null); // State variable to store the server response
   const [isLoading, setIsLoading] = useState(false);
 
@@ -47,7 +46,7 @@ function SearchPage() {
     <div className='SearchPage'>
       <div className='search-page-top'>
         <div onClick={() => navigate('/home')}><XIcon /></div>
-        <h2 style={{ textAlign: 'left', fontSize: '8vw', marginLeft: '8vw', marginRight: '10vw'}}>Search Page</h2>
+        <h2 style={{ textAlign: 'left', fontSize: '6vw', marginLeft: '8vw', marginRight: '10vw', color: '#0A194D'}}>How can we help?</h2>
       </div>
 
       <div>
