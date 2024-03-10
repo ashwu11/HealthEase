@@ -13,6 +13,13 @@ h1 {
 
 }
 
+header {
+  width: 100%;
+  /* Try setting this to 400px or something */
+  display: table;
+  border: 1px solid #444444;
+}
+
 .Title {
   font-size: 5vh;
   color: #0A194D;
