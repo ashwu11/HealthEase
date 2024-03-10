@@ -1,5 +1,91 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh;
+}
+
+.CameraPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh;
+}
+
+.home-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 3vw;
+}
+
+.sign-up-button {
+  color: #0A194D;
+  padding: 2px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: #FDD700;
+  border-radius: 2vw;
+  margin-left: 3vw;
+}
+
+h1 {
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  border: 1px solid #444444;
+}
+
+.Title {
+  font-size: 5vw;
+  color: #0A194D;
+  font-weight: bold;
+  padding: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #FDD700;
+  border-radius: 2vw;
+  margin: 5vw;
+  margin-bottom: 0px;
+}
+
+.Description {
+  font-size: 3vw;
+  color: #0A194D;
+  font-weight: bold;
+  padding: 2vw;
+  border-radius: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding-right: 6vw;
+  padding-left: 6vw;
+}
+
+.Button-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Button-grid {
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  background: #E0EBEF;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -28,10 +114,68 @@
   color: #61dafb;
 }
 
+.icon-qualities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  /* /* Corresponds to rounded-2xl / */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* / Corresponds to shadow-sm / */
+  background-color: #0f2444;
+  /* / Corresponds to bg-blue-950 / */
+  height: 20vw;
+  width: 20vw;
+  margin: 1.5rem;
+  /* / Corresponds to m-6 */
+}
+
+.x-icon-qualities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  /* Equivalent to px-3 */
+  padding-top: 0.75rem;
+  /* Equivalent to pt-3 */
+  padding-bottom: 0.5rem;
+  /* Equivalent to pb-2 */
+  border-radius: 1rem;
+  /* Equivalent to rounded-2xl */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* Equivalent to shadow-sm */
+  background-color: #0f2444;
+  /* Equivalent to bg-blue-950 */
+  height: 6vw;
+  width: 6vw;
+  margin: 1rem;
+}
+
+.flex-header-name {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* CHANGE BG COLOUR AFTER!!! */
+  background-color: #61dafb;
+
+}
+
+.imageUpload {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
