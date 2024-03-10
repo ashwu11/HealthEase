@@ -5,7 +5,7 @@ import MicIcon from '../components/mic-icon';
 import ClipboardIcon from '../components/clipboard-icon';
 import PersonIcon from '../components/person-icon';
 
-function Home() {
+function HomePage() {
   return (
     <div className='HomePage'>
 
@@ -25,7 +25,11 @@ function Home() {
           <PersonIcon />
           <ClipboardIcon />
         </div>
+      </div>
 
+      <div className='home-footer'>
+        <p>No Account?</p>
+        <p className='sign-up-button'>Sign Up</p>
       </div>
 
 
@@ -33,4 +37,4 @@ function Home() {
   );
 };
 
-export default Home;
+export default HomePage;

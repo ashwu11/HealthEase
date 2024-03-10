@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Home from "./pages/home-page"
+import HomePage from "./pages/home-page";
 import CameraPage from "./pages/camera-page"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -14,9 +15,16 @@ function App() {
 
   return (
     <div className="App">
-      <Home />
-      <CameraPage />
-      <h1>{message}</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomePage />}/>
+          <Route path="/home" element={<HomePage />}/>
+          <Route path="/camera" element={<CameraPage />}/>
+          {/* <Route path="*" element={<NoPage />}/> */}
+
+        </Routes>
+      </BrowserRouter>
+      {/* <h1>{message}</h1> */}
     </div>
   );
 }

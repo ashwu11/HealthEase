@@ -6,11 +6,27 @@
   margin: 5vh;
 }
 
+.home-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 3vw;
+}
+
+.sign-up-button {
+  color: #0A194D;
+  padding: 2px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: #FDD700;
+  border-radius: 2vw;
+  margin-left: 3vw;
+}
+
 h1 {
   font-size: x-large;
   color: black;
   font-weight: bold;
-
 }
 
 header {
@@ -21,26 +37,26 @@ header {
 }
 
 .Title {
-  font-size: 5vh;
+  font-size: 5vw;
   color: #0A194D;
   font-weight: bold;
-  padding: 2vh;
+  padding: 2vw;
   padding-left: 10vw;
   padding-right: 10vw;
   background-color: #FDD700;
   border-radius: 2vw;
-  margin: 5vh;
+  margin: 5vw;
   margin-bottom: 0px;
 }
 
 .Description {
-  font-size: 3vh;
+  font-size: 3vw;
   color: #0A194D;
   font-weight: bold;
-  padding: 2vh;
+  padding: 2vw;
   border-radius: 2vw;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   padding-right: 6vw;
   padding-left: 6vw;
 }
