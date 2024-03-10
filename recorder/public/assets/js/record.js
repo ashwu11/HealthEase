@@ -15,7 +15,7 @@ function record() {
         alert('Your browser does not support recording!');
         return;
     }
-    
+
     // browser supports getUserMedia
     // change image in button
     recordButtonImage.src = `/images/${mediaRecorder && mediaRecorder.state === 'recording' ? 'microphone' : 'stop'}.png`;
@@ -40,7 +40,7 @@ function record() {
         mediaRecorder.stop();
     }
   }
-  
+
   recordButton.addEventListener('click', record);
 
   function mediaRecorderDataAvailable(e) {
@@ -67,7 +67,7 @@ function record() {
     mediaRecorder = null;
     chunks = [];
   }
-  
+
   function discardRecording () {
     //show the user the prompt to confirm they want to discard
     if (confirm('Are you sure you want to discard the recording?')) {
@@ -75,7 +75,7 @@ function record() {
       resetRecording();
     }
   }
-  
+
   function resetRecording () {
     if (recordedAudioContainer.firstElementChild.tagName === 'AUDIO') {
       //remove the audio
@@ -87,7 +87,7 @@ function record() {
     //reset audioBlob for the next recording
     audioBlob = null;
   }
-  
+
   //add the event listener to the button
   discardAudioButton.addEventListener('click', discardRecording);
 
@@ -115,6 +115,6 @@ function record() {
       resetRecording();
     })
   }
-  
+
   //add the event handler to the click event
   saveAudioButton.addEventListener('click', saveRecording);

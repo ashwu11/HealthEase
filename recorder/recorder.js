@@ -10,11 +10,12 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, 'uploads/');
+    cb(null, '');
   },
   filename(req, file, cb) {
-    const fileNameArr = file.originalname.split('.');
-    cb(null, `${Date.now()}.${fileNameArr[fileNameArr.length - 1]}`);
+    // const fileNameArr = file.originalname.split('.');
+    // cb(null, `${Date.now()}.${fileNameArr[fileNameArr.length - 1]}`);
+    cb(null, file.originalname);
   },
 });
 const upload = multer({ storage });
