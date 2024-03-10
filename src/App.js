@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to HealthEase</h1>
       <Home />
       <CameraPage />
       <h1>{message}</h1>

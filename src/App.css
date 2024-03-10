@@ -7,12 +7,14 @@
 
 .Title {
   font-size: xx-large;
-  color: white;
+  color: #0A194D;
   font-weight: bold;
-  padding: 20px;
+  padding: 5%;
   background-color: #FDD700;
   border-radius: 25px;
   margin: 25px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .Button-row {

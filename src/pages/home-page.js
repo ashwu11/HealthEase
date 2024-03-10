@@ -8,12 +8,12 @@ import PersonIcon from '../components/person-icon';
 function Home() {
   return (
     <div className='HomePage'>
-      <h1>Home page start</h1>
+
       <ImageGrid/>
 
       <div>
         <h1 className='Title'>Health Ease</h1>
-        <h3>Health made for everyone</h3>
+        <h3>Welcome to Health Ease</h3>
       </div>
 
       <div className='Button-grid'>
@@ -28,7 +28,7 @@ function Home() {
 
       </div>
 
-      <h1>Home page end</h1>
+
     </div>
   );
 };
