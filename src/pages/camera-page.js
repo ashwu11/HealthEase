@@ -14,7 +14,7 @@ import TextBubble from '../components/text-bubble';
 
 function CameraPage() {
     return (
-        <div className='CameraPage'>
+        <div className='Page'>
 
             <div className='flex-header-name' >
                 <XIcon />

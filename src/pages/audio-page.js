@@ -5,7 +5,7 @@ import MicIcon from '../components/mic-icon';
 function AudioPage() {
 
   return (
-    <div className='AudioPage'>
+    <div className='Page'>
       <div className='flex-header-name' >
         <XIcon />
         <h1 className='h1'>

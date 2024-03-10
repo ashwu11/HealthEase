@@ -10,7 +10,7 @@ function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <div className='HomePage'>
+    <div className='Page'>
 
       <Logo />
 
