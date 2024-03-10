@@ -6,6 +6,7 @@ import CameraIcon from '../components/camera-icon';
 import ClipboardIcon from '../components/clipboard-icon';
 import XIcon from '../components/x-icon';
 import CameraComponent from '../components/camera-take';
+import setImgSrc from '../components/camera-take';
 
 
 

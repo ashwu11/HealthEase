@@ -21,13 +21,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<HomePage />}/>
-          <Route path="/home" element={<HomePage />}/>
-          <Route path="/camera" element={<CameraPage />}/>
-          <Route path="/history" element={<HistoryPage />}/>
-          <Route path="/search" element={<SearchPage />}/>
-          <Route path="/audio" element={<AudioPage />}/>
-          <Route path="*" element={<NoPage />}/>
+          <Route index element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/camera" element={<CameraPage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/audio" element={<AudioPage />} />
+          <Route path="*" element={<NoPage />} />
 
         </Routes>
       </BrowserRouter>
