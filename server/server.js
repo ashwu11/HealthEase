@@ -10,6 +10,7 @@ const { CohereClient } = require("cohere-ai");
 
 // creating a new express app
 const app = express();
+const port = 8000;
 
 // creating a new cohere object connected with the my key
 const cohere = new CohereClient({
@@ -30,19 +31,19 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// asks for user input
-rl.question('Please ask your question:\n', (question) => {
-    
-    // Store the user input in a variable
-    const message = question;
-    
+app.post('/send-data', (req, res) => {
+    const receivedData = req.body.data;
+    console.log('Received data:', receivedData);
+  
+    // Process the data or store it in a database as needed
+
     // specifications for the cohere ai 
     const model = "command";
     const temperature = 0.9;
 
     // Make a POST request to the Cohere Chat AI API
     axios.post('https://api.cohere.ai/chat', {
-        message: message,
+        message: receivedData,
         model: model,
         temperature: temperature
     }, {
@@ -60,10 +61,11 @@ rl.question('Please ask your question:\n', (question) => {
         // Handle errors
         console.error('Error:', error);
     });
+  
+    res.status(200).send('Data received successfully');
+  });
+  
 
-    rl.close(); // Close the interface after reading input
-});
-
-app.listen(8000, () => {
+app.listen(port, () => {
   console.log(`Server is running on port 8000.`);
 });

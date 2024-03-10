@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageGrid from '../components/logo';
+import Logo from '../components/logo';
 import CameraIcon from '../components/camera-icon';
 import MicIcon from '../components/mic-icon';
 import ClipboardIcon from '../components/clipboard-icon';
@@ -10,9 +10,9 @@ function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <div className='HomePage'>
+    <div className='Page'>
 
-      <ImageGrid />
+      <Logo />
 
       <div>
         <h1 className='Title'>Health Ease</h1>
@@ -21,7 +21,7 @@ function HomePage() {
 
       <div className='Button-grid'>
         <div className='Button-row'>
-          <div onClick={() => navigate('/camera')}><CameraIcon/></div>
+          <div onClick={() => navigate('/camera')}><CameraIcon /></div>
           <div onClick={() => navigate('/audio')}><MicIcon /></div>
         </div>
         <div className='Button-row'>
@@ -31,8 +31,7 @@ function HomePage() {
       </div>
 
       <div className='home-footer'>
-        <p>No Account?</p>
-        <p className='sign-up-button'>Sign Up</p>
+        <button className='sign-up-button'>No Account? Sign Up</button>
       </div>
 
 

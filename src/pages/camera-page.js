@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageGrid from '../components/logo';
+import Logo from '../components/logo';
 import PersonIcon from '../components/person-icon';
 import MicIcon from '../components/mic-icon';
 import CameraIcon from '../components/camera-icon';
@@ -7,13 +7,14 @@ import ClipboardIcon from '../components/clipboard-icon';
 import XIcon from '../components/x-icon';
 import CameraComponent from '../components/camera-take';
 import setImgSrc from '../components/camera-take';
+import TextBubble from '../components/text-bubble';
 
 
 
 
 function CameraPage() {
     return (
-        <div className='CameraPage'>
+        <div className='Page'>
 
             <div className='flex-header-name' >
                 <XIcon />
@@ -27,8 +28,14 @@ function CameraPage() {
 
             </div>
 
+
             <div>
                 <CameraComponent />
+            </div>
+
+            <div>
+                {/* change text to be ai returning */}
+                <TextBubble text="Hello, this is a text bubble!" />
             </div>
 
 

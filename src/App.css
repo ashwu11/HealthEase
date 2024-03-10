@@ -18,17 +18,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   font-size: 3vw;
 }
 
 .sign-up-button {
   color: #0A194D;
-  padding: 2px;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding: 2vw;
   background-color: #FDD700;
   border-radius: 2vw;
   margin-left: 3vw;
+  margin-top: 20px;
+  font-size: 3vw;
 }
 
 h1 {
@@ -161,6 +162,7 @@ header {
   text-align: center;
   /* CHANGE BG COLOUR AFTER!!! */
   background-color: #61dafb;
+  margin-bottom: 25px;
 
 }
 
@@ -169,6 +171,44 @@ header {
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+}
+
+.text-bubble {
+  text-size-adjust: auto;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 75vw;
+  margin-bottom: 10px;
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh;
+}
+
+.home-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 3vw;
+}
+
+.search-page-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 2vw;
+  border-radius: 2vw;
+  margin: 2vw;
 }
 
 @keyframes App-logo-spin {

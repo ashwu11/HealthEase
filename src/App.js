@@ -11,11 +11,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    fetch("http://localhost:8000/message")
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://api.cohere.ai/v1/chat")
+  //     .then((res) => res.json())
+  //     .then((data) => setMessage(data.message));
+  // }, []);
 
   return (
     <div className="App">
