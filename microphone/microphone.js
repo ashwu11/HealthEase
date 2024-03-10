@@ -14,7 +14,7 @@ async function transcribe(file) {
     }, {
         headers: {
             'Content-Type': 'multipart/form-data',
-            Authorization: 'Bearer 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'
+            Authorization: 'Bearer ${process.env.OPENAI_API_KEY}'
         }
     });
     return response.data.text;
