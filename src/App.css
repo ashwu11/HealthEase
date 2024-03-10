@@ -31,8 +31,7 @@ h1 {
 
 header {
   width: 100%;
-  /* Try setting this to 400px or something */
-  display: table;
+  display: flex;
   border: 1px solid #444444;
 }
 
@@ -122,6 +121,35 @@ header {
   width: 20vw;
   margin: 1.5rem;
   /* / Corresponds to m-6 */
+}
+
+.x-icon-qualities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  /* Equivalent to px-3 */
+  padding-top: 0.75rem;
+  /* Equivalent to pt-3 */
+  padding-bottom: 0.5rem;
+  /* Equivalent to pb-2 */
+  border-radius: 1rem;
+  /* Equivalent to rounded-2xl */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* Equivalent to shadow-sm */
+  background-color: #0f2444;
+  /* Equivalent to bg-blue-950 */
+  height: 6vw;
+  width: 6vw;
+  margin: 1rem;
+}
+
+.flex-header-name {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

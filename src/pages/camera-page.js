@@ -8,22 +8,15 @@ import XIcon from '../components/x-icon';
 
 function CameraPage() {
     return (
-
-        <header>
-            <div class="Button-row">
-                <XIcon />
-
-                <h1 className='h1'>
-                    Camera
-                </h1>
-
-                <div className='icon-qualities' style={{ w: '5vw', h: '5vh' }}>
-                    <CameraIcon />
-
-                </div>
-            </div>
-
-        </header>
+        <div className='flex-header-name' >
+            <XIcon />
+            <h1 className='h1'>
+                Camera
+            </h1>
+            {/* <div className='icon-qualities' style={{ width: '5vw', height: '5vw' }} > */}
+            <CameraIcon />
+            {/* </div> */}
+        </div>
 
         //         {/* <h2>
         //             <XIcon />
