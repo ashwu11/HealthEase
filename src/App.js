@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./pages/home"
+import CameraPage from "./pages/camera-page"
 
 function App() {
   const [message, setMessage] = useState("");
@@ -14,10 +15,11 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to HealthEase</h1>
-      <Home/>
+      <Home />
+      <CameraPage />
       <h1>{message}</h1>
     </div>
-  );  
+  );
 }
 
 export default App
