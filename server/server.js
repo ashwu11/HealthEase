@@ -31,7 +31,7 @@ const rl = readline.createInterface({
 });
 
 // asks for user input
-rl.question('Please ask your question: ', (question) => {
+rl.question('Please ask your question:\n', (question) => {
     
     // Store the user input in a variable
     const message = question;
@@ -62,4 +62,8 @@ rl.question('Please ask your question: ', (question) => {
     });
 
     rl.close(); // Close the interface after reading input
+});
+
+app.listen(8000, () => {
+  console.log(`Server is running on port 8000.`);
 });
