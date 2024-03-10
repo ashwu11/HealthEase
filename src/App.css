@@ -6,6 +6,14 @@
   margin: 5vh;
 }
 
+.CameraPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh;
+}
+
 .home-footer {
   display: flex;
   flex-direction: row;
@@ -24,7 +32,7 @@
 }
 
 h1 {
-  font-size: x-large;
+  font-size: 45px;
   color: black;
   font-weight: bold;
 }
@@ -147,9 +155,20 @@ header {
 .flex-header-name {
   width: 100vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  /* CHANGE BG COLOUR AFTER!!! */
+  background-color: #61dafb;
+
+}
+
+.imageUpload {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
 }
 
 @keyframes App-logo-spin {
