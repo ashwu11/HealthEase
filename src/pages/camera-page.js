@@ -22,50 +22,48 @@ function CameraPage() {
         debugger;
         try {
             setIsLoading(true);
-    
-          const response = await fetch('http://localhost:8080/send-data', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ data : dataFromChild}),
-          });
-    
-          console.log(response.text);
-      
-          if (response.ok) {
-            const data = await response.text(); // Retrieve the response as text
-            console.log(data);
-            setServerResponse(data); // Store the response in the state variable
-            console.log('Data sent successfully');
-          } else {
-            console.error('Failed to send data to server');
-          }
+
+            const response = await fetch('http://localhost:8080/send-data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ data: dataFromChild }),
+            });
+
+            console.log(response.text);
+
+            if (response.ok) {
+                const data = await response.text(); // Retrieve the response as text
+                console.log(data);
+                setServerResponse(data); // Store the response in the state variable
+                console.log('Data sent successfully');
+            } else {
+                console.error('Failed to send data to server');
+            }
         } catch (error) {
-          console.error('Error sending data to server:', error);
+            console.error('Error sending data to server:', error);
         } finally {
             setIsLoading(false);
         }
-      };
+    };
 
     // Callback function to receive data from the child
     const handleDataFromChild = (data) => {
         console.log('Received data from child:', data);
         sendDataToServer(data);
     };
-    
+
     return (
+
+
+
+
         <div className='Page'>
 
-            <div className='flex-header-name' >
-                <div onClick={() => navigate('/home')}><XIcon/></div>
-                <h1 className='h1'>
-                    Camera
-                </h1>
-
-                <div className='icon-qualities' style={{ width: '5vw', height: '5vw' }} >
-                    <CameraIcon />
-                </div>
+            <div className='page-top' >
+                <div onClick={() => navigate('/home')}><XIcon /></div>
+                <h2 style={{ textAlign: 'left', fontSize: '8vw', marginLeft: '8vw', marginRight: '10vw' }}>Camera Page</h2>
 
             </div>
 

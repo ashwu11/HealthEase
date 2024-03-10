@@ -21,6 +21,30 @@
   font-size: 3vw;
 }
 
+.circular-button {
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background-color: #0A194D;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.page-top {
+  background-color: #FDD700;
+  margin-bottom: 25px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size: 45px;
   color: #0A194D;
