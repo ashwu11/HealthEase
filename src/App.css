@@ -106,7 +106,7 @@ header {
   padding: 1.25rem;
   border-radius: 1rem;
   /* /* Corresponds to rounded-2xl / */
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
   /* / Corresponds to shadow-sm / */
   background-color: #0f2444;
   /* / Corresponds to bg-blue-950 / */
@@ -121,17 +121,17 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 0.75rem;
-  /* Equivalent to px-3 */
+  /* Equivalent to px-3 / */
   padding-top: 0.75rem;
-  /* Equivalent to pt-3 */
+  /* / Equivalent to pt-3 / */
   padding-bottom: 0.5rem;
-  /* Equivalent to pb-2 */
+  /* / Equivalent to pb-2 / */
   border-radius: 1rem;
-  /* Equivalent to rounded-2xl */
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  /* Equivalent to shadow-sm */
+  /* / Equivalent to rounded-2xl / */
+  box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
+  /* / Equivalent to shadow-sm / */
   background-color: #0f2444;
-  /* Equivalent to bg-blue-950 */
+  /* / Equivalent to bg-blue-950 */
   height: 6vw;
   width: 6vw;
   margin: 1rem;
@@ -212,6 +212,20 @@ header {
   width: 60vw;
   margin: 2vw;
   font-size: 4vw;
+}
+
+.circular-button {
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background-color: #FDD700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
 }
 
 @keyframes App-logo-spin {
