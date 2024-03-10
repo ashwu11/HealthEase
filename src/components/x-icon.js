@@ -4,7 +4,7 @@ function XIcon() {
     return (
 
         <div
-            className="flex flex-col items-center px-3 pt-3 pb-2 rounded-2xl shadow-sm bg-blue-950 h-[54px] w-[54px] m-4">
+            className="flex flex-col items-center px-3 pt-3 pb-2 rounded-2xl shadow-sm bg-blue-950 h-[6vw] w-[6vw] m-4">
             <img
 
                 loading="lazy"

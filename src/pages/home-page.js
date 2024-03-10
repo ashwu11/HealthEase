@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className='HomePage'>
 
-      <ImageGrid/>
+      <ImageGrid />
 
       <div>
         <h1 className='Title'>Health Ease</h1>
@@ -18,12 +18,12 @@ function Home() {
 
       <div className='Button-grid'>
         <div className='Button-row'>
-          <CameraIcon/>
-          <MicIcon/>
+          <CameraIcon />
+          <MicIcon />
         </div>
         <div className='Button-row'>
-          <PersonIcon/>
-          <ClipboardIcon/>
+          <PersonIcon />
+          <ClipboardIcon />
         </div>
 
       </div>

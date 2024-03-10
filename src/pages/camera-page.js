@@ -10,13 +10,13 @@ function CameraPage() {
     return (
 
         <header>
-            <div class="mdl-layout-icon">
+            <div class="Button-row">
                 <XIcon />
 
                 <h1 className='h1'>
                     Camera
                 </h1>
-                <CameraIcon style={{ height: '30%' }} />
+                <CameraIcon style={{ size: '30%' }} />
 
             </div>
 
