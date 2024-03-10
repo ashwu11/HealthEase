@@ -9,6 +9,7 @@ function CameraComponent() {
     const capture = () => {
         const imageSrc = webcamRef.current.getScreenshot();
         setImgSrc(imageSrc); // Update the state with the URL of the captured image
+        console.log(imageSrc);
     };
 
 
@@ -22,10 +23,13 @@ function CameraComponent() {
                     audio={false}
                     ref={webcamRef}
                     screenshotFormat="image/jpeg"
-                    style={{ width: '100%', height: 'auto' }}
+                    style={{ width: '75vw', height: '50vw' }}
                 />
             )}
-            <button onClick={capture}>Capture Photo</button>
+            <div>
+                <button className='sign-up-button'
+                    onClick={capture}>Capture Photo</button>
+            </div>
         </div>
     );
 }
