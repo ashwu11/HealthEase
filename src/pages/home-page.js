@@ -1,6 +1,9 @@
 import React from 'react';
 import ImageGrid from '../components/logo';
-import Button from '../components/button';
+import CameraIcon from '../components/camera-icon';
+import MicIcon from '../components/mic-icon';
+import ClipboardIcon from '../components/clipboard-icon';
+import PersonIcon from '../components/person-icon';
 
 function Home() {
   return (
@@ -8,19 +11,19 @@ function Home() {
       <h1>Home page start</h1>
       <ImageGrid/>
 
-      <div className='Title'>
-        <h1 className='Name'>Health Ease</h1>
-        <p>Health made for everyone</p>
+      <div>
+        <h1 className='Title'>Health Ease</h1>
+        <h3>Health made for everyone</h3>
       </div>
 
       <div className='Button-grid'>
         <div className='Button-row'>
-          <Button/>
-          <Button/>
+          <CameraIcon/>
+          <MicIcon/>
         </div>
         <div className='Button-row'>
-          <Button/>
-          <Button/>
+          <PersonIcon/>
+          <ClipboardIcon/>
         </div>
 
       </div>
