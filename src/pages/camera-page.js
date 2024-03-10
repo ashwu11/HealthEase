@@ -8,16 +8,18 @@ import XIcon from '../components/x-icon';
 import CameraComponent from '../components/camera-take';
 import setImgSrc from '../components/camera-take';
 import TextBubble from '../components/text-bubble';
-
+import { useNavigate } from 'react-router-dom';
 
 
 
 function CameraPage() {
+    const navigate = useNavigate();
+    
     return (
         <div className='Page'>
 
             <div className='flex-header-name' >
-                <XIcon />
+                <div onClick={() => navigate('/home')}><XIcon/></div>
                 <h1 className='h1'>
                     Camera
                 </h1>

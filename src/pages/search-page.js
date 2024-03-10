@@ -17,7 +17,9 @@ function SearchPage() {
             },
             body: JSON.stringify({ data: inputValue }),
           });
-    
+
+          console.log(response);
+
           if (response.ok) {
             console.log('Data sent successfully');
           } else {
