@@ -22,7 +22,7 @@ function HomePage() {
       <div className='Button-grid'>
         <div className='Button-row'>
           <div onClick={() => navigate('/camera')}><CameraIcon/></div>
-          <MicIcon />
+          <div onClick={() => navigate('/audio')}><MicIcon /></div>
         </div>
         <div className='Button-row'>
           <div onClick={() => navigate('/search')}><PersonIcon /></div>

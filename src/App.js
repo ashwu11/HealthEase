@@ -5,6 +5,7 @@ import CameraPage from "./pages/camera-page"
 import NoPage from "./pages/no-page";
 import HistoryPage from "./pages/history-page";
 import SearchPage from "./pages/search-page";
+import AudioPage from "./pages/audio-page";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/camera" element={<CameraPage />}/>
           <Route path="/history" element={<HistoryPage />}/>
           <Route path="/search" element={<SearchPage />}/>
+          <Route path="/audio" element={<AudioPage />}/>
           <Route path="*" element={<NoPage />}/>
 
         </Routes>
