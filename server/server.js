@@ -55,14 +55,14 @@ app.post('/send-data', (req, res) => {
     .then((response) => {
         // Handle the response
         const answer = response.data.text;
+        res.send(answer);
         console.log(answer); // Log the response or use it as needed
     })
     .catch((error) => {
         // Handle errors
         console.error('Error:', error);
     });
-  
-    res.status(200).send('Data received successfully');
+    
   });
   
 

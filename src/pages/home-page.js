@@ -12,8 +12,6 @@ function HomePage() {
   return (
     <div className='Page'>
 
-      <Logo />
-
       <div>
         <h1 className='Title'>Health Ease</h1>
         <h3 className='Description'>Health made easy for everyone</h3>
