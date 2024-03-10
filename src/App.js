@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import HomePage from "./pages/home-page";
 import CameraPage from "./pages/camera-page"
+import NoPage from "./pages/no-page";
+import HistoryPage from "./pages/history-page";
+import SearchPage from "./pages/search-page";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,7 +23,9 @@ function App() {
           <Route index element={<HomePage />}/>
           <Route path="/home" element={<HomePage />}/>
           <Route path="/camera" element={<CameraPage />}/>
-          {/* <Route path="*" element={<NoPage />}/> */}
+          <Route path="/history" element={<HistoryPage />}/>
+          <Route path="/search" element={<SearchPage />}/>
+          <Route path="*" element={<NoPage />}/>
 
         </Routes>
       </BrowserRouter>
