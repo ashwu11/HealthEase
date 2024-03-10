@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../components/logo';
 import PersonIcon from '../components/person-icon';
 import MicIcon from '../components/mic-icon';
@@ -14,6 +14,45 @@ import { useNavigate } from 'react-router-dom';
 
 function CameraPage() {
     const navigate = useNavigate();
+    const [dataFromChild, setDataFromChild] = useState(null);
+    var [serverResponse, setServerResponse] = useState(null); // State variable to store the server response
+    const [isLoading, setIsLoading] = useState(false);
+
+    const sendDataToServer = async (data) => {
+        debugger;
+        try {
+            setIsLoading(true);
+    
+          const response = await fetch('http://localhost:8080/send-data', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ data : dataFromChild}),
+          });
+    
+          console.log(response.text);
+      
+          if (response.ok) {
+            const data = await response.text(); // Retrieve the response as text
+            console.log(data);
+            setServerResponse(data); // Store the response in the state variable
+            console.log('Data sent successfully');
+          } else {
+            console.error('Failed to send data to server');
+          }
+        } catch (error) {
+          console.error('Error sending data to server:', error);
+        } finally {
+            setIsLoading(false);
+        }
+      };
+
+    // Callback function to receive data from the child
+    const handleDataFromChild = (data) => {
+        console.log('Received data from child:', data);
+        sendDataToServer(data);
+    };
     
     return (
         <div className='Page'>
@@ -32,7 +71,7 @@ function CameraPage() {
 
 
             <div>
-                <CameraComponent />
+                <CameraComponent onDataFromChild={handleDataFromChild} />
             </div>
 
             <div>

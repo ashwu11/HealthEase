@@ -2,16 +2,18 @@
 import React, { useRef, useState } from 'react';
 import Webcam from 'react-webcam';
 
-function CameraComponent() {
-    const webcamRef = useRef(null);
+function CameraComponent(props) {
+
+    const webcamRef = useRef();
     const [imgSrc, setImgSrc] = useState(null); // State to store the URL of the captured image
 
     const capture = () => {
         const imageSrc = webcamRef.current.getScreenshot();
         setImgSrc(imageSrc); // Update the state with the URL of the captured image
         console.log(imageSrc);
+        // Call the callback function passed from the parent with the data
+        props.onDataFromChild(imgSrc);
     };
-
 
     return (
         <div>
