@@ -14,7 +14,7 @@ const ImageGrid = () => {
         {
             src: "https://cdn.builder.io/api/v1/image/assets/TEMP/b17e9909999c5e5830d563862d6a3632f836d4c4f41e8a66134e391eac19840f?apiKey=f6bdfdfe9ef944de9a9a5f2bf6573abd&",
             alt: "Image 2",
-            className: "shrink-0 self-start mt-5 aspect-[1.09] w-[53px]",
+            className: "shrink-0 self-start mt-5 aspect-[1.09] w-[51px]",
         },
         {
             src: "https://cdn.builder.io/api/v1/image/assets/TEMP/8b2146be2933cca7e6ae54f686db6d413f5550ff6a25aa5c4c1e7bf11814eea1?apiKey=f6bdfdfe9ef944de9a9a5f2bf6573abd&",

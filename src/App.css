@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+h1 {
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+
+}
+
 .Title {
   font-size: xx-large;
   color: #0A194D;
