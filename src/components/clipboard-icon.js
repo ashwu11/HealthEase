@@ -2,7 +2,7 @@ import * as React from "react";
 
 function ClipboardIcon() {
     return (
-        <div className="flex flex-col items-center px-5 pt-3 pb-6 rounded-2xl shadow-sm bg-blue-950 h-[136px] w-[136px] m-4">
+        <div className="flex flex-col items-center px-5 pt-3 pb-6 rounded-2xl shadow-sm bg-blue-950 h-[20vh] w-[20vh] m-6">
             <img
                 loading="lazy"
                 alt="clipboard icon"

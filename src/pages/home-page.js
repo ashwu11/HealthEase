@@ -13,7 +13,7 @@ function Home() {
 
       <div>
         <h1 className='Title'>Health Ease</h1>
-        <h3>Welcome to Health Ease</h3>
+        <h3 className='Description'>Health made easy for everyone</h3>
       </div>
 
       <div className='Button-grid'>
