@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Health Mate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inspiration
 
-## Available Scripts
+We were inspired by our parents—especially seeing their difficulty in comprehending complicated medical terminology in their day-to-day lives. Unfortunately, many suffer similar issues, including immigrants who do not have strong English-speaking skills. It is additionally difficult when many translation tools are complex and require multiple steps. Therefore, we produced HealthMate, a simple application that interprets medical jargon into simple language via text and photo analysis.
 
-In the project directory, you can run:
+## What it does
 
-### `npm start`
+This application will take user input in the form of text, image or audio and translate it through the use of multiple AI into simplified explanations that the user can understand. The goal is to allow anyone to be able to understand the difficult medical terms, conditions or drugs that they may encounter through our app. Upon entering the home page, the user will have the options of taking a photo, providing audio, typing an input or viewing their history. If the photo option is chosen, they will be able to take a picture of a body of text that they wish to be translated into a more understandable explanation. If the audio option is chosen, the user will have the opportunity to record the medical terms they are having trouble with and receive a simplified understanding of it. Then, if the typing option is chosen, the user can type out their query and receive a reply giving them a layman's explanation of their question. Lastly, the history option will provide the history of the user's questions if they have an account.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How we built it
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+We used React and Node.js to create the front end and back end respectively. Additionally, we used Figma to create and plan the initial visual interface. For the back end, we utilized Cohere AI, OpenAI, and Tesseract.js APIs to translate the various user inputs. For the appearance of the application, we made sure to choose colour blind-friendly colour schemes, include different user input methods for those who may need them and keep in mind the audience that may use our application. For instance, we wanted to make everything look simple, neat and straightforward since this application may be used by the elderly for them to be more medically literate. Additionally, we tried to keep all icons and text larger so that it can be more accessible to those who are farsighted.
 
-### `npm test`
+## Challenges we ran into
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A big challenge we ran into was being too ambitious at the start with the different features we wanted our application to have. We underestimated the amount of work and learning it would take to figure out how to create various functions from utilizing and importing APIs to connecting the front and back ends together. Since we are quite new to using React and Node.js, it was difficult learning within 24 hours and implement everything we wanted to create. Due to this, we were unfortunately unable to create some of the functions that we had originally outlined such as having the user history.
 
-### `npm run build`
+## Accomplishments that we're proud of
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We are proud of still being able to create a somewhat working application despite the minimal experience we had with React and Node.js. Additionally, we are proud of being able to use this time to learn a lot about using React, Node.js and working with APIs. Not only that, we are proud that we were able to successfully work together as a team to create an application that we were passionate about making.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## What we learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Through this experience, we learned a lot about developing a web application from scratch using React and Node.js. We also learned about managing and collaborating through Github and dividing tasks. Additionally, we learned a lot about working with APIs and the different types of functionality that can be accessed through them.
 
-### `npm run eject`
+## What's next for HealthMate
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We would like to fix the current non-functioning parts such as the audio translation and creating logins so that the history of users can be kept track of. This would be improved upon by connecting the front and back ends as they both work separately. On top of that, we would like the improve the design and look of our application to not only look more aesthetic, but also be more accessible if possible.
