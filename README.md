@@ -1,4 +1,7 @@
-# Health Mate
+# HealthMate
+A web application that uses multiple AI technologies to translate complex medical terminology into simplified explanations, aiming to facilitate user comprehension. Users can choose to input text via typing, image capture, or audio recording on the home page, with an additional option to view their question history if registered.
+
+**Built Using:** Node.js, Express.js, React.js, HTML/CSS, MongoDB, OpenAI, Cohere, Tesseract
 
 ## Inspiration
 
