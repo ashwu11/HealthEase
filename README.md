@@ -1,7 +1,7 @@
 # HealthMate
 A web application that uses multiple AI technologies to translate complex medical terminology into simplified explanations, focusing on accessible ways to facilitate user comprehension. Users can choose to input text via typing, image capture, or audio recording on the home page, with an additional option to view their question history if registered. This project was created as part of **UBC nwPlus cmd-f 2024**, a 24-hour hackathon celebrating underrepresented genders in tech. 
 
-**Built Using:** Node.js, Express.js, React.js, HTML/CSS, MongoDB, OpenAI, Cohere, Tesseract
+**Built Using:** Node.js, Express.js, React, HTML/CSS, MongoDB, OpenAI, Cohere, Tesseract
 ## Images
 
 | Home Page  | Search Page | Camera Page |
